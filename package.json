@@ -1,0 +1,18 @@
+{
+  "name": "zenstudy-immersive-space",
+  "version": "1.0.0",
+  "description": "ZenStudy 澄境 · 單人沉浸式讀書空間 - 商業設計系自然科學與人工智慧期末專題",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "pomodoro",
+    "lofi",
+    "study-space",
+    "ambient-sound",
+    "focus-timer"
+  ],
+  "author": "鄒粢伃, 謝芸榛 (CD000A 第17組)",
+  "license": "MIT"
+}

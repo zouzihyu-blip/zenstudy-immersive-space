@@ -1,0 +1,13 @@
+# Logs
+*.log
+.system_generated/
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment / Keys
+.env
+.env.local
+*.key

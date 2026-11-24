@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "zenstudy-immersive-space",
+  "builds": [
+    { "src": "**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}

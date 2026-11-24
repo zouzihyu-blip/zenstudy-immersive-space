@@ -1,0 +1,58 @@
+{
+    "revision":  3,
+    "groupEstimate":  {
+                          "individualContribution":  10,
+                          "explanation":  "1. 作品上線（10分）：配置 vercel.json 支援一鍵零配置靜態部署，並相容本機雙擊開啟。\\n2. 管理／資料功能（10分）：具備任務目標、靈感便箋、自訂場景庫與專注歷史紀錄四大完整 CRUD，支援 JSON 備份匯出與匯入。\\n3. 個人貢獻（10分）：鄒粢伃與謝芸榛分工明確，在 UI/音訊架構與資料管理模組均有實質功能貢獻與 GitHub 協作流程。\\n4. 完成度與創意（10分）：商業設計深色磨砂美學、Web Audio 自然音效純演算法即時合成、暖光 Lofi 和弦生成、Zen 極簡沉浸模式與防休眠時間戳計時。",
+                          "dataManagement":  10,
+                          "revision":  4,
+                          "creativity":  10,
+                          "published":  10
+                      },
+    "draft":  {
+                  "changes":  [
+                                  {
+                                      "evidence":  "docs/improvement-records.md 改善紀錄一與背景分頁測試截圖",
+                                      "before":  "計時器在背景分頁休眠時因瀏覽器降頻產生嚴重時間漂移延遲，25分鐘番茄鐘常延誤數分鐘",
+                                      "result":  "背景分頁掛載 5 分鐘後切回，時間精準在 20:00，誤差小於 0.2 秒，分頁標題動態連動無誤",
+                                      "decision":  "改用 Date.now() 時間戳差值計算（Delta Timing）架構，切換回前景瞬間即時補正真實秒數"
+                                  },
+                                  {
+                                      "evidence":  "docs/improvement-records.md 改善紀錄二與離線音訊測試紀錄",
+                                      "before":  "環境音依賴外部 MP3 容易遇到 CORS 跨域阻擋、無網路失效且循環處有卡頓爆音",
+                                      "result":  "斷網離線環境下 100% 順暢發聲，30 分鐘無接縫循環，徹底杜絕外部音訊依賴",
+                                      "decision":  "導入瀏覽器原生 Web Audio API，程序化數學演算法即時合成粉紅噪音雨聲、海浪潮汐與頌缽諧波"
+                                  },
+                                  {
+                                      "evidence":  "docs/improvement-records.md 改善紀錄三與 LocalStorage 驗證截圖",
+                                      "before":  "傳統工具缺乏個人化資料管理，重新整理即丟失，未達期末加分之資料管理（CRUD）標準",
+                                      "result":  "新增任務與便箋後重新整理 F5 完整復原，JSON 備份檔可一鍵匯出並在無痕視窗成功匯入還原",
+                                      "decision":  "建置 LocalStorage 完整 CRUD 模組，包含待辦目標、彩色便箋、自訂場景與歷史紀錄，並加入 JSON 備份匯出入"
+                                  },
+                                  {
+                                      "evidence":  "docs/improvement-records.md 改善紀錄四與極簡模式錄影展示",
+                                      "before":  "長時間閱讀注視螢幕產生視覺眩光，過多操作按鈕干擾思考與閱讀節奏",
+                                      "result":  "夜間實測降低螢幕發光刺激，按下 Z 鍵 0.28 秒內平滑淡出所有非必要面板，視覺焦點 100% 集中於讀書",
+                                      "decision":  "採用曜石黑毛玻璃視覺語言、加入背景暗度與模糊度自訂調節，並設計一鍵快捷鍵 Z 的 Zen 極簡沉浸模式"
+                                  }
+                              ],
+                  "title":  "ZenStudy 澄境 · 單人沉浸式讀書空間",
+                  "contributions":  [
+                                        {
+                                            "work":  "專案主體架構與整體深色毛玻璃介面設計、8 大精選場景庫建置、Web Audio API 自然音效合成器研發、Zen 極簡沉浸模式實作。",
+                                            "name":  "鄒粢伃",
+                                            "evidenceUrls":  [
+
+                                                             ],
+                                            "studentNo":  "11533146"
+                                        },
+                                        {
+                                            "work":  "待辦目標與靈感便箋資料管理系統（CRUD 實作與 LocalStorage 整合）、三大計時邏輯測試、專注歷史數據分析與 JSON 備份功能驗證。",
+                                            "name":  "謝芸榛",
+                                            "evidenceUrls":  [
+
+                                                             ]
+                                        }
+                                    ],
+                  "designSummary":  "專為深度學習、考照衝刺與閱讀設計的個人沉浸式虛擬自習室。結合商業設計曜石黑毛玻璃（Glassmorphism）美學與 Web Audio API 8 軌程序化聲學合成技術，具備番茄鐘、倒數計時與碼表三大模式，並提供待辦目標、隨手便箋、自訂場景與專注歷史四大資料管理（CRUD）功能，支援一鍵按 Z 進入 Zen 極簡沉浸模式。"
+              }
+}
